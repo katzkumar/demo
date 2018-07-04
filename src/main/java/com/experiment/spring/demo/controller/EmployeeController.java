@@ -12,12 +12,12 @@ import com.experiment.spring.demo.dto.Employee;
 @RequestMapping("employees")
  public class EmployeeController {
 
-    Employee employee = new Employee();
+    private Employee employee = new Employee();
 
     @RequestMapping(value="/{name}", method = RequestMethod.GET, produces = "application/json")
     public Employee getEmployee(@PathVariable String name) {
         employee.setName("test");
-        employee.setEmployeeId("emp123");
+        employee.setEmployeeId("emp1234");
         return employee;
    }
 }
