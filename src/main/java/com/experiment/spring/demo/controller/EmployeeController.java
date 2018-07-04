@@ -17,7 +17,7 @@ import com.experiment.spring.demo.dto.Employee;
     @RequestMapping(value="/{name}", method = RequestMethod.GET, produces = "application/json")
     public Employee getEmployee(@PathVariable String name) {
         employee.setName("test");
-        employee.setEmployeeId("emp1234");
+        employee.setEmployeeId("emp123");
         return employee;
    }
 }
